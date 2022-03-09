@@ -1,1 +1,37 @@
 hello people
+
+//git commands
+$git version ----gives the current version we are using
+$git help config ---gives all the commands of git
+$mkdir test--Makes a directory
+$cd test--- takes into the directory
+ the create a normal text document in test folder
+
+To initialize the text document
+$git init
+
+Now to check the status of the created text file use command
+$git status--it also says on which branch we have created the file say master
+
+This says nothing is added to commit but something is present.
+
+
+To add the file to the current directory we use
+$git add demo.txt
+
+commit command
+$git command -m "Message"
+ $clear ---clears the screen
+
+To connect to the github account 
+$git global -config user.username SaiPriya00(github account name)
+
+
+Then go to github account create a repository:test_demo
+copy the link of https from repository 
+then go back to the bash
+Now we need to link the local annd the remote repository
+$git remote add origin "link copied_____________________________"
+so now we can push a local file to our remote repository
+$git push origin master
+Now we can see the demo.txt file which we have created in the github account.
