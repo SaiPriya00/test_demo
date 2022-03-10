@@ -11,7 +11,7 @@ To initialize the text document
 $git init
 
 Now to check the status of the created text file use command
-$git status--it also says on which branch we have created the file say master
+$git status--it also says on which brancd tech we have created the file say master
 
 This says nothing is added to commit but something is present.
 
@@ -19,12 +19,12 @@ This says nothing is added to commit but something is present.
 To add the file to the current directory we use
 $git add demo.txt
 
-commit command
-$git command -m "Message"
+commit commandg
+$git commit -m "Message"
  $clear ---clears the screen
 
 To connect to the github account 
-$git global -config user.username SaiPriya00(github account name)
+$git config --global user.username SaiPriya00(github account name)
 
 
 Then go to github account create a repository:test_demo
@@ -35,3 +35,28 @@ $git remote add origin "link copied_____________________________"
 so now we can push a local file to our remote repository
 $git push origin master
 Now we can see the demo.txt file which we have created in the github account.
+
+
+To find we have ssh key or not we use
+
+$ls -al ~/.ssh
+
+To generate a ssh key command:folder
+
+$ssh-keygen -t rsa
+To get the agent pid command is:
+$eval $(ssh-agent -s)
+we get agent pid 1696
+To find in which place the generated key is present we use the command
+$ssh-add ~/.ssh/id_rsa
+Now our ssh will be created in the users admin 
+Then open the Microsoft office powerpoint in notepad++
+copy the key from that
+then open github account under settings fing ssh key
+creat new ssh
+add the copied ssh key 
+
+Then in the bash to verify everything is going good
+use command
+$ssh -T git@github.com
+
